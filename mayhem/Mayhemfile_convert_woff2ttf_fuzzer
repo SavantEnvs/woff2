@@ -1,0 +1,9 @@
+project: savantenvs/woff2
+target: convert_woff2ttf_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/convert_woff2ttf_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/convert_woff2ttf_fuzzer
+    libfuzzer: true
+    timeout: 5
